@@ -1,0 +1,44 @@
+<!-- alquiler.component.html -->
+<div>
+    <div>
+        <h2>¡Excelente elección!</h2>
+        <p>Completa el siguiente formulario y agendemos tu alquiler</p>
+
+        <!-- Formulario de alquiler -->
+        <form (ngSubmit)="onSubmit()">
+            <div class="mb-4">
+                <label>Identificador</label>
+                <input type="text" [(ngModel)]="identificador" name="identificador" required />
+            </div>
+            <div class="mb-4">
+                <label>Valor</label>
+                <input type="number" [(ngModel)]="valor" name="valor" required />
+            </div>
+            <div class="mb-4">
+                <label>Nombre Contratante</label>
+                <input type="text" [(ngModel)]="nombre_contratante" name="nombreContratante" required />
+            </div>
+            <div class="mb-4">
+                <label>Documento Contratante</label>
+                <input type="text" [(ngModel)]="documento_contratante" name="documentoContratante" required />
+            </div>
+            <div class="mb-4">
+                <label>Nombre Contratantista</label>
+                <input type="text" [(ngModel)]="nombre_contratantista" name="nombreContratantista" required />
+            </div>
+            <div class="mb-4">
+                <label>Documento Contratantista</label>
+                <input type="text" [(ngModel)]="documento_contratantista" name="documentoContratantista" required />
+            </div>
+            <div class="mb-4">
+                <label>Fecha Inicial:</label>
+                <input type="date" [(ngModel)]="fecha_inicial" name="fechaInicial" required />
+            </div>
+            <div class="mb-4">
+                <label>Fecha Final:</label>
+                <input type="date" [(ngModel)]="fecha_final" name="fechaFinal" required />
+            </div>
+            <button type="submit">Crear Contrato!</button>
+        </form>
+    </div>
+</div>

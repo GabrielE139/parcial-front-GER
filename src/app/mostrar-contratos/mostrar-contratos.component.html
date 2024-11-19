@@ -1,0 +1,29 @@
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Identificador</th>
+                <th>Valor</th>
+                <th>Nombre Contratante</th>
+                <th>Documento Contratante</th>
+                <th>Nombre Contratista</th>
+                <th>Documento Contratista</th>
+                <th>Fecha Inicial</th>
+                <th>Fecha Final</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Recorremos los contratos con *ngFor -->
+            <tr *ngFor="let contrato of contratos">
+                <td>{{ contrato.identificador }}</td>
+                <td>{{ contrato.valor }}</td>
+                <td>{{ contrato.nombre_contratante }}</td>
+                <td>{{ contrato.documento_contratante }}</td>
+                <td>{{ contrato.nombre_contratantista }}</td>
+                <td>{{ contrato.documento_contratantista }}</td>
+                <td>{{ contrato.fecha_inicial }}</td>
+                <td>{{ contrato.fecha_final }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
